@@ -1,0 +1,10 @@
+[package]
+name = "bevy_empty_game"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[dependencies]
+bevy = { version="*", features=["dynamic"] } # NOTE: be sure to remove "dynamic" feature before releasing your game
